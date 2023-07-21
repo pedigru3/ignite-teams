@@ -11,5 +11,5 @@ export const LoadIndicator = styled.ActivityIndicator.attrs(({theme}) => ({
   color: theme.COLORS.GREEN_700,
   size: 30,
 }))`
-
+  flex: 1
 `;

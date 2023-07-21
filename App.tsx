@@ -2,10 +2,10 @@ import { ThemeProvider } from 'styled-components/native';
 import { Roboto_400Regular, Roboto_700Bold, useFonts } from '@expo-google-fonts/roboto'
 
 import { Loading } from '@components/loading';
-
-import theme from './src/theme';
+import { Routes } from './src/routes';
 import { StatusBar } from 'react-native';
-import { Players } from '@screens/Players';
+import theme from './src/theme';
+
 
 export default function App() {
   const [fontsLoad] = useFonts({
@@ -20,7 +20,7 @@ export default function App() {
         backgroundColor='transparent'
         translucent
       />
-      {fontsLoad ? <Players/> : <Loading/>}
+      {fontsLoad ? <Routes/> : <Loading/>}
     </ThemeProvider>
   );
 }
